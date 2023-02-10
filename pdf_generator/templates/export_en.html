@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "snippets/head.html" %}
+  <body>
+    {% include "snippets/header.html" %}
+    <div class="wrapper">
+      <div class="adress_content">
+        <div>
+          <p class="text">77, Isanov street</p>
+          <p class="text">720033,Bishkek, Kyrgyz Republic</p>
+          <p class="text">Phone: +996(312)61-00-61</p>
+          <p class="text">Whatsapp: +996(554)00-61-11</p>
+          <p class="text">email: bank@bakai.kg</p>
+        </div>
+        <div>
+          <p class="text">720033,Кыргызская Республика,</p>
+          <p class="text">г.Бишкек,ул. Исанова, 77</p>
+          <p class="text">тел: +996(312)61-00-61</p>
+          <p class="text">Whatsapp: +996(554)00-61-11</p>
+          <p class="text">email: bank@bakai.kg</p>
+        </div>
+        <div>
+          <p class="text">720033, Кыргыз Республикасы,</p>
+          <p class="text">Бишкек ш., Исанова кч., 77</p>
+          <p class="text">тел: +996(312)61-00-61</p>
+          <p class="text">Whatsapp: +996(554)00-61-11</p>
+          <p class="text">email: bank@bakai.kg</p>
+        </div>
+      </div>
+      <div class="document_info">
+        <p class="line"><b>No.:</b> 10254/51</p>
+        <p class="line"><b>Date: </b> {{ data.dtime }}</p>
+        <p class="line"><b>To: </b>Whom it may concern</p>
+        <p class="line">
+          <b>Raf: </b>Confirmation of the account with balance
+        </p>
+      </div>
+      <div class="document_content">
+        <div class="document_title_header">
+          <h1>Reference Leter</h1>
+        </div>
+        <div class="document_title_text">
+          <p>
+            Hereby, we confirm that Mr/Ms. {{data.surname}}
+            {{data.name}} {{data.patronymic}}, passport №
+            {{data.pasport_id}} issued by - 2019-05-06 y., is a customer of Bakai Bank OJSC
+            and has current account № {{data.invoice_number}} from 16.08.2022 y.
+          </p>
+        </div>
+        <table>
+          <tr>
+            <th>Account number</th>
+            <th>Currency</th>
+            <th>Balance on {{data.dtime}}</th>
+          </tr>
+          <tr>
+            <td>{{data.invoice_number}}</td>
+            <td>{{data.currency}}</td>
+            <td>{{data.balance}}</td>
+          </tr>
+        </table>
+        <div class="document_title_text">
+          <p>
+            This information has been submitted upon the above-mentioned customer’s request and the
+            Bank shall not be binding upon presenting of this confirmation and/or bear any further
+            responsibilities to any of the third parties.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_content_title">
+        <p>Bank stamp place</p>
+      </div>
+      <div class="footer_content">
+        <img
+          src="/home/tahir/Desktop/py21/BakaiBank/html_to_pdf/static/image/IP.svg"
+          alt="Stamp"
+          class="stamp"
+        />
+      </div>
+    </footer>
+  </body>
+</html>

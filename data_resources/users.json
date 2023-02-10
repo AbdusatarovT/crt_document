@@ -1,0 +1,39 @@
+
+[
+{
+"client_id": "57651",
+"name": "ТАХИР",
+"surname": "АБДУСАТАРОВ",
+"patronymic": "КАДЫРЖАНОВИЧ",
+"inn": "12345678998765",
+"birth_date": "19-06-1993",
+"balance": "125.00",
+"invoice_number": "125468547",
+"currency": "KGZ",
+"pasport_id": "ID2546"
+},
+{
+"client_id": "57652",
+"name": "JHON",
+"surname": "SNOW",
+"patronymic": "TARGARIAN",
+"inn": "12548756321123",
+"birth_date": "19-06-1969",
+"balance": "146.00",
+"invoice_number": "125468547",
+"currency": "KGZ",
+"pasport_id": "ID2546"
+},
+{
+"client_id": "57653",
+"name": "MIKE",
+"surname": "TISON",
+"patronymic": "KAIRATOV",
+"inn": "98756413325124",
+"birth_date": "19-06-1985",
+"balance": "658.00",
+"invoice_number": "125468547",
+"currency": "KGZ",
+"pasport_id": "ID2546"
+}
+]
